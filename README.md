@@ -1,6 +1,6 @@
-# BLOG-STARTER
+# PERSONAL-BLOG
 
-This repository provides a basic example of how to start developing a React blog site on the Yext Pages system.
+This repository is the completed version of the [Pages Quick Start - Build a Blog](https://hitchhikers.yext.com/guides/pages-quick-start-blog/). You can either follow along with that guide to learn how to build this project from scratch or you can get started with this repo.
 
 ## Getting Started
 
@@ -17,22 +17,24 @@ This repository provides a basic example of how to start developing a React blog
 ### Clone this repo and install dependencies
 
 ```shell
-git clone https://github.com/YextSolutions/pages-starter-react-blog.git
-cd pages-starter-react-blog
+git clone https://github.com/YextSolutions/personal-blog.git
+cd personal-blog
 npm install
 npm run dev
 ```
 
 ### Useful commands
 
-#### Primary Commands for Development 
+#### Primary Commands for Development
+
 `yext init` - Authenticates the Yext CLI with your Yext account
 
 `npm run dev` - runs your code against a local dev server using Vite and pulls down data from your Yext Knowledge Graph
 
-`npm run build:serve` - runs a production build of your site which mirrors the production environment. Running this command is recommended before committing your code and initiating a new deploy. 
+`npm run build:serve` - runs a production build of your site which mirrors the production environment. Running this command is recommended before committing your code and initiating a new deploy.
 
 #### Other CLI Commands
+
 - All stream documents come from the `localData` folder
 - You can visit either of these urls out of the box
   - http://localhost:3000/index/123
@@ -108,4 +110,3 @@ The rest of the files are basic config setup common to many other React projects
 1. ESLint - catches errors in your code
 1. Prettier - formats your code (you can add .prettierrc to override any default settings)
 1. TypeScript - adds typing to Javascript for a better developer experience
-
