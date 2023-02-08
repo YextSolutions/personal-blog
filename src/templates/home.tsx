@@ -13,6 +13,7 @@ import Greeting from "../components/greeting";
 import PersonalInfo from "../components/personal-info";
 import SearchExperience from "../components/search-experience";
 import BlogResults from "../components/blog-results";
+import SearchApiKeyModal from "../components/SearchApiKeyModal";
 
 export const getPath: GetPath<TemplateProps> = () => {
   return `index.html`;
@@ -31,7 +32,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
 const Home: Template<TemplateRenderProps> = ({
   document,
 }: TemplateRenderProps) => {
-  const { _site } = document;
+  const { _site, businessId } = document;
 
   return (
     <SearchExperience experienceKey="blog-search" verticalKey="blogs">
@@ -60,6 +61,8 @@ const Home: Template<TemplateRenderProps> = ({
           },
         ]}
       />
+      {/* Once you have added your Search API Key, you can remove this component */}
+      <SearchApiKeyModal businessId={businessId} />
     </SearchExperience> // New Content
   );
 };

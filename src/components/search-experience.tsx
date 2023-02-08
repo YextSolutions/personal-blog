@@ -7,10 +7,8 @@ import {
   SandboxEndpoints, // remove if using a production account
 } from "@yext/search-headless-react";
 
-const SEARCH_API_KEY = import.meta.env.YEXT_PUBLIC_SEARCH_API_KEY;
-
 export const searchConfig = {
-  apiKey: SEARCH_API_KEY,
+  apiKey: YEXT_PUBLIC_SEARCH_API_KEY,
   locale: "en",
   endpoints: SandboxEndpoints, // remove if using a production account
 };
